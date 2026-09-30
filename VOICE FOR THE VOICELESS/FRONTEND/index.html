@@ -1,0 +1,506 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>SAUTIYANGU A VOICE FOR THE VOICELESS</title>
+  <!-- Correct way to link CSS in <head> -->
+<link rel="stylesheet" href="style.css">
+
+<!-- Correct way to link JS at bottom of <body> -->
+<script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page-glow glow-one"></div>
+  <div class="page-glow glow-two"></div>
+
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <div class="brand">
+        <div class="brand-mark">🗣️</div>
+        <span>Voice for the Voiceless</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#overview">Overview</a>
+        <a href="#impact">Impact</a>
+        <a href="#app">Prototype</a>
+        <a href="#connect">Connect</a>
+      </div>
+
+      <button class="nav-btn" id="languageToggle">
+        Switch to Swahili
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Inclusive communication</p>
+
+          <h1>
+            When silence is danger, technology gives a voice.
+          </h1>
+
+          <p class="subtitle">
+            Accessible English and Kiswahili communication
+            support for people who need another way to express
+            urgent messages.
+          </p>
+
+          <div class="cta-row">
+            <a href="#app" class="primary-btn">
+              Try the prototype
+            </a>
+
+            <a href="#impact" class="secondary-btn">
+              See the impact
+            </a>
+          </div>
+
+          <div class="stats">
+            <div>
+              <strong>24/7</strong>
+              <span>Support</span>
+            </div>
+
+            <div>
+              <strong>2</strong>
+              <span>Languages</span>
+            </div>
+
+            <div>
+              <strong>100%</strong>
+              <span>Accessible</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="device-card">
+            <div class="device-header">
+              <span class="dot red"></span>
+              <span class="dot amber"></span>
+              <span class="dot green"></span>
+            </div>
+
+            <div class="device-body">
+              <div class="device-topline">
+                <span class="mini-label">
+                  Quick expression
+                </span>
+
+                <span class="status-pill">Live</span>
+              </div>
+
+              <h3 id="demoMessage">I need help</h3>
+
+              <div class="mini-buttons">
+                <button class="chip" data-demo="help">
+                  🆘 Help
+                </button>
+
+                <button class="chip" data-demo="thirsty">
+                  💧 Water
+                </button>
+
+                <button class="chip" data-demo="pain">
+                  🏥 Pain
+                </button>
+              </div>
+
+              <button class="play-btn" id="demoSpeak">
+                🔊 Speak now
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="impact">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">The challenge</p>
+
+          <h2>
+            Not everyone can express what they need when it
+            matters most.
+          </h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="info-card">
+            <div class="icon">⚠️</div>
+            <h3>The problem</h3>
+            <p>
+              In moments of fear, pain, or confusion, many
+              people struggle to communicate clearly.
+            </p>
+          </article>
+
+          <article class="info-card highlight">
+            <div class="icon">💡</div>
+            <h3>The solution</h3>
+            <p>
+              A simple communication tool that turns urgent
+              phrases into spoken words in seconds.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">How it works</p>
+
+          <h2>
+            A simple system with a powerful human impact.
+          </h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">1</span>
+            <h3>Choose a language</h3>
+            <p>
+              Switch between English and Kiswahili.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">2</span>
+            <h3>Tap a message</h3>
+            <p>
+              Select help, food, water, pain, or another need.
+            </p>
+          </article>
+
+          <article class="feature-card">
+            <span class="feature-icon">3</span>
+            <h3>Speak with confidence</h3>
+            <p>
+              Use the message immediately or type your own.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section impact-section">
+      <div class="container impact-wrap">
+        <div class="impact-copy">
+          <p class="eyebrow">Our mission</p>
+
+          <h2>Every person deserves to be heard.</h2>
+
+          <p>
+            We improve communication in stressful situations
+            so people can get support quickly.
+          </p>
+        </div>
+
+        <div class="impact-panel">
+          <ul>
+            <li>Faster emergency response</li>
+            <li>Stronger family communication</li>
+            <li>Greater confidence under pressure</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="section app-section" id="app">
+      <div class="container app-shell">
+        <div class="app-copy">
+          <p class="eyebrow accent">Live prototype</p>
+
+          <h2>Speak the message that matters.</h2>
+
+          <p>
+            Choose your language, press a quick-help phrase,
+            or type your own message.
+          </p>
+        </div>
+
+        <div class="app-card">
+          <div class="lang-row">
+            <button class="lang-btn active" data-lang="en">
+              English
+            </button>
+
+            <button class="lang-btn" data-lang="sw">
+              Kiswahili
+            </button>
+          </div>
+
+          <div class="voice-preview">
+            <span class="preview-dot"></span>
+
+            <div>
+              <span class="preview-label">
+                Current message
+              </span>
+
+              <strong id="previewText">
+                Choose a message to begin.
+              </strong>
+            </div>
+          </div>
+
+          <div class="quick-grid">
+            <button class="quick-btn" data-message="help">
+              🆘
+              <span>I need help</span>
+            </button>
+
+            <button class="quick-btn" data-message="hungry">
+              🍽️
+              <span>I am hungry</span>
+            </button>
+
+            <button class="quick-btn" data-message="thirsty">
+              💧
+              <span>I am thirsty</span>
+            </button>
+
+            <button class="quick-btn" data-message="pain">
+              🏥
+              <span>I am in pain</span>
+            </button>
+
+            <button class="quick-btn" data-message="family">
+              📞
+              <span>Please call my family</span>
+            </button>
+
+            <button class="quick-btn" data-message="thanks">
+              ❤️
+              <span>Thank you</span>
+            </button>
+          </div>
+
+          <textarea
+            id="customInput"
+            placeholder="Type your message here..."
+          ></textarea>
+
+          <div class="app-actions">
+            <button class="secondary-btn small" id="clearBtn">
+              Clear
+            </button>
+
+            <button class="primary-btn small" id="speakBtn">
+              🔊 Speak
+            </button>
+          </div>
+
+          <label class="speed-control">
+            <span>Speaking speed</span>
+
+            <output id="speedValue">0.95x</output>
+
+            <input
+              id="speedRange"
+              type="range"
+              min="0.65"
+              max="1.25"
+              step="0.05"
+              value="0.95"
+            />
+          </label>
+
+          <p id="statusText" class="status-text">
+            Ready
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section connection-section" id="connect">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow accent">Community connection</p>
+
+          <h2>
+            Find people who understand your journey.
+          </h2>
+
+          <p>
+            Connect with trusted users, friends, caregivers,
+            and community supporters.
+          </p>
+        </div>
+
+        <div class="connection-layout">
+          <div class="people-card">
+            <div class="connection-toolbar">
+              <input
+                id="peopleSearch"
+                type="search"
+                placeholder="Search by name or interest"
+              />
+
+              <select id="connectionLanguage">
+                <option value="all">All languages</option>
+                <option value="en">English</option>
+                <option value="sw">Kiswahili</option>
+              </select>
+            </div>
+
+            <div id="peopleList" class="people-list"></div>
+          </div>
+
+          <div class="profile-card">
+            <p class="eyebrow accent">Your profile</p>
+
+            <label for="profileName">
+              Display name
+            </label>
+
+            <input
+              id="profileName"
+              placeholder="Example: Amina"
+              maxlength="40"
+            />
+
+            <label for="profileInterest">
+              Interest
+            </label>
+
+            <input
+              id="profileInterest"
+              placeholder="Example: Music, school, art"
+              maxlength="60"
+            />
+
+            <label for="profileBio">
+              Short introduction
+            </label>
+
+            <textarea
+              id="profileBio"
+              rows="4"
+              placeholder="Tell people a little about yourself"
+              maxlength="160"
+            ></textarea>
+
+            <label class="checkbox-row">
+              <input
+                id="profileDiscoverable"
+                type="checkbox"
+              />
+
+              <span>
+                Allow trusted users to find me
+              </span>
+            </label>
+
+            <button
+              id="saveProfile"
+              class="primary-btn small"
+            >
+              Save profile
+            </button>
+
+            <p
+              id="profileStatus"
+              class="status-text"
+            ></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section messaging-section" id="messages">
+      <div class="container messaging-layout">
+        <div class="conversation-card">
+          <div class="conversation-header">
+            <div>
+              <p class="eyebrow accent">Private space</p>
+
+              <h2 id="conversationTitle">
+                Choose a connection
+              </h2>
+            </div>
+
+            <span class="encryption-badge">
+              🔒 Encrypted demo
+            </span>
+          </div>
+
+          <div id="messageList" class="message-list">
+            <p class="empty-messages">
+              Choose someone to start a conversation.
+            </p>
+          </div>
+
+          <div class="message-composer">
+            <textarea
+              id="messageInput"
+              rows="3"
+              placeholder="Write a private message..."
+              maxlength="500"
+            ></textarea>
+
+            <div class="composer-actions">
+              <button
+                id="sendMessage"
+                class="primary-btn small"
+              >
+                Send message
+              </button>
+
+              <button
+                id="startCall"
+                class="secondary-btn small"
+              >
+                📞 Voice call
+              </button>
+
+              <button
+                id="startVideoCall"
+                class="secondary-btn small"
+              >
+                🎥 Video call
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <aside class="privacy-card">
+          <p class="eyebrow">Privacy by design</p>
+
+          <h2>Your conversations belong to you.</h2>
+
+          <ul>
+            <li>Messages are encrypted before upload.</li>
+            <li>Never publish a phone number publicly.</li>
+            <li>Users can block or report anyone.</li>
+            <li>Calls require camera and microphone permission.</li>
+          </ul>
+
+          <p class="privacy-note">
+            This school prototype demonstrates the interface.
+            Real online messaging and calls require a secure
+            backend and WebRTC signaling server.
+          </p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-row">
+      <p>Voice for the Voiceless © 2026</p>
+      <p>Helping voices rise when words feel impossible.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
