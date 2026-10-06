@@ -4,11 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>SAUTIYANGU A VOICE FOR THE VOICELESS</title>
-  <!-- Correct way to link CSS in <head> -->
-<link rel="stylesheet" href="style.css">
-
-<!-- Correct way to link JS at bottom of <body> -->
-<script src="script.js" defer></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <div class="page-glow glow-one"></div>
@@ -321,6 +317,69 @@
       </div>
     </section>
 
+    <section class="section auth-section" id="auth">
+      <div class="container auth-shell">
+        <div class="auth-copy">
+          <p class="eyebrow accent">Account access</p>
+          <h2>Log in to connect with your community.</h2>
+          <p>
+            Create an account or sign in to view trusted users,
+            send messages, and start conversations.
+          </p>
+        </div>
+
+        <div class="app-card auth-card">
+          <div class="lang-row auth-tabs" aria-label="Authentication mode">
+            <button class="lang-btn active" data-auth-mode="login" type="button">
+              Log in
+            </button>
+            <button class="lang-btn" data-auth-mode="register" type="button">
+              Register
+            </button>
+          </div>
+
+          <form id="authForm" class="auth-form">
+            <input
+              id="authDisplayName"
+              type="text"
+              placeholder="Display name"
+              autocomplete="name"
+              style="display:none;"
+            />
+
+            <input
+              id="authEmail"
+              type="email"
+              placeholder="Email address"
+              autocomplete="email"
+              required
+            />
+
+            <input
+              id="authPassword"
+              type="password"
+              placeholder="Password"
+              autocomplete="current-password"
+              required
+            />
+
+            <button type="submit" class="primary-btn small" id="authSubmit">
+              Log in
+            </button>
+          </form>
+
+          <p id="authStatus" class="status-text"></p>
+
+          <div id="loggedInState" style="display:none; margin-top: 12px;">
+            <p class="status-text" id="loggedInMessage">Signed in</p>
+            <button class="secondary-btn small" id="logoutBtn" type="button">
+              Log out
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <section class="section connection-section" id="connect">
       <div class="container">
         <div class="section-heading">
@@ -429,7 +488,7 @@
             </div>
 
             <span class="encryption-badge">
-              🔒 Encrypted demo
+              Demo only — not encrypted
             </span>
           </div>
 
@@ -478,7 +537,7 @@
           <h2>Your conversations belong to you.</h2>
 
           <ul>
-            <li>Messages are encrypted before upload.</li>
+            <li>Do not send sensitive information in this demo.</li>
             <li>Never publish a phone number publicly.</li>
             <li>Users can block or report anyone.</li>
             <li>Calls require camera and microphone permission.</li>
